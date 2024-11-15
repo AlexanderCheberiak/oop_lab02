@@ -1,0 +1,7 @@
+﻿<University>
+  <Person Name="John Doe" Faculty="ФКНК" Position="Professor" Salary="5000" />
+  <Person Name="Jane Smith" Faculty="Mathematics" Position="Associate Professor" Salary="4000" />
+  <Person Name="Alice Brown" Faculty="Computer Science" Position="Assistant" Salary="3000" />
+  <Person Name="Bob White" Faculty="Physics" Position="Researcher" Salary="3500" />
+  <Person Name="Emily Davis" Faculty="Computer Science" Position="Researcher" Salary="3200" />
+</University>

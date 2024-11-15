@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Uni\\2nd year\\OOP\\Lab02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\searchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:searchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\data\\data.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:data\\data.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\domanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:domanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\saxanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:saxanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\linqtoxmlanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:linqtoxmlanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\data\\data.xsl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:data\\data.xsl||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\data\\data.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:data\\data.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\idocumentanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:idocumentanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|d:\\uni\\2nd year\\oop\\lab02\\lab02.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E77E88D2-FDBE-4521-9D7C-D8D8C115F917}|Lab02.csproj|solutionrelative:lab02.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "data.html",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.html",
+              "RelativeDocumentMoniker": "Data\\data.html",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.html",
+              "RelativeToolTip": "Data\\data.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-14T18:43:57.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "data.xsl",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.xsl",
+              "RelativeDocumentMoniker": "Data\\data.xsl",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.xsl",
+              "RelativeToolTip": "Data\\data.xsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003586|",
+              "WhenOpened": "2024-11-14T18:42:31.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "data.xml",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.xml",
+              "RelativeDocumentMoniker": "Data\\data.xml",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\Data\\data.xml",
+              "RelativeToolTip": "Data\\data.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-14T18:41:56.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Lab02.csproj",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\Lab02.csproj",
+              "RelativeDocumentMoniker": "Lab02.csproj",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\Lab02.csproj",
+              "RelativeToolTip": "Lab02.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-14T14:47:20.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchResult.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\SearchResult.cs",
+              "RelativeDocumentMoniker": "SearchResult.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\SearchResult.cs*",
+              "RelativeToolTip": "SearchResult.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T18:31:52.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LinqToXmlAnalyzer.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\LinqToXmlAnalyzer.cs",
+              "RelativeDocumentMoniker": "LinqToXmlAnalyzer.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\LinqToXmlAnalyzer.cs",
+              "RelativeToolTip": "LinqToXmlAnalyzer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA0wB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:51:21.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DomAnalyzer.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\DomAnalyzer.cs",
+              "RelativeDocumentMoniker": "DomAnalyzer.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\DomAnalyzer.cs",
+              "RelativeToolTip": "DomAnalyzer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:49:18.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaxAnalyzer.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\SaxAnalyzer.cs",
+              "RelativeDocumentMoniker": "SaxAnalyzer.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\SaxAnalyzer.cs",
+              "RelativeToolTip": "SaxAnalyzer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:48:35.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IDocumentAnalyzer.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\IDocumentAnalyzer.cs",
+              "RelativeDocumentMoniker": "IDocumentAnalyzer.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\IDocumentAnalyzer.cs",
+              "RelativeToolTip": "IDocumentAnalyzer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:47:50.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\MainPage.xaml.cs*",
+              "RelativeToolTip": "MainPage.xaml.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:34:50.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Uni\\2nd year\\OOP\\Lab02\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\Uni\\2nd year\\OOP\\Lab02\\MainPage.xaml*",
+              "RelativeToolTip": "MainPage.xaml*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-14T07:32:10.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
