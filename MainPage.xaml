@@ -1,10 +1,9 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lab02.MainPage"
-             Title="Аналіз XML">
+             Title="XML Analyzer">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
-            <Label Text="Аналіз XML-файлів" FontSize="24" HorizontalOptions="Center" />
 
             <!-- Вибір XML файлу -->
             <HorizontalStackLayout>
@@ -31,10 +30,15 @@
             <Label Text="Критерії пошуку" FontSize="18" />
             <Entry x:Name="NameEntry" Placeholder="Ім'я" />
             <Entry x:Name="FacultyEntry" Placeholder="Факультет" />
+            <Entry x:Name="DepartmentEntry" Placeholder="Кафедра" />
             <Entry x:Name="PositionEntry" Placeholder="Посада" />
+            <HorizontalStackLayout>
+                <Entry x:Name="SalaryFromEntry" Placeholder="Оклад від" />
+                <Entry x:Name="SalaryToEntry" Placeholder="до" />
+            </HorizontalStackLayout>
 
             <!-- Вибір методу аналізу -->
-            <Picker x:Name="AnalysisPicker" Title="Метод аналізу" />
+            <Picker x:Name="AnalysisPicker" Title="Метод аналізу" FontSize="18"/>
 
             <!-- Кнопки -->
             <Button Text="Аналізувати" Clicked="OnAnalyze" />
@@ -42,18 +46,20 @@
             <Button Text="Очистити" Clicked="OnClear" />
 
             <!-- Вивід результатів -->
-            <Label Text="Результати пошуку" FontSize="18" />
+            <Label Text="Результати пошуку:" FontSize="18" />
             <CollectionView x:Name="ResultsCollectionView" ItemsSource="{Binding}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal" Padding="5">
-                            <Label Text="{Binding Name}" FontAttributes="Bold" />
-                            <Label Text=" | " />
-                            <Label Text="{Binding Faculty}" />
-                            <Label Text=" | " />
-                            <Label Text="{Binding Position}" />
-                            <Label Text=" | " />
-                            <Label Text="{Binding Salary}" />
+                            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text=" | " FontSize="18"/>
+                            <Label Text="{Binding Faculty}" FontSize="18"/>
+                            <Label Text=" | " FontSize="18"/>
+                            <Label Text="{Binding Department}" FontSize="18"/>
+                            <Label Text=" | " FontSize="18"/>
+                            <Label Text="{Binding Position}" FontSize="18"/>
+                            <Label Text=" | " FontSize="18"/>
+                            <Label Text="{Binding Salary}" FontSize="18"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

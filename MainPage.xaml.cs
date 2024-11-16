@@ -15,24 +15,6 @@ public partial class MainPage : ContentPage
         AnalysisPicker.ItemsSource = new List<string> { "SAX", "DOM", "LINQ to XML" };
     }
 
-    private async Task<string> PickFileAsync(string pickerTitle, string[] allowedExtensions)
-    {
-        var customFileType = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
-        {
-            { DevicePlatform.WinUI, allowedExtensions },
-            { DevicePlatform.Android, allowedExtensions },
-            { DevicePlatform.iOS, allowedExtensions }
-        });
-
-        var result = await FilePicker.PickAsync(new PickOptions
-        {
-            FileTypes = customFileType,
-            PickerTitle = pickerTitle
-        });
-
-        return result?.FullPath ?? string.Empty;
-    }
-
     private async void BrowseXmlButton_Clicked(object sender, EventArgs e)
     {
         XmlFilePathEntry.Text = await PickFileAsync("Виберіть XML-файл", new[] { ".xml" });
@@ -48,7 +30,29 @@ public partial class MainPage : ContentPage
         HtmlFilePathEntry.Text = await PickFileAsync("Виберіть HTML-файл", new[] { ".html" });
     }
 
-    private async void OnAnalyze(object sender, EventArgs e)
+    private void OnAnalyze(object sender, EventArgs e) { AnalyzeXml(); }
+
+    private void OnTransform(object sender, EventArgs e) { TransformToHtml(); }
+
+    private void OnClear(object sender, EventArgs e) { ClearAll(); }
+
+    private async Task<string> PickFileAsync(string pickerTitle, string[] allowedExtensions)
+    {
+        var customFileType = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
+        {
+            { DevicePlatform.WinUI, allowedExtensions }
+        });
+
+        var result = await FilePicker.PickAsync(new PickOptions
+        {
+            FileTypes = customFileType,
+            PickerTitle = pickerTitle
+        });
+
+        return result?.FullPath ?? string.Empty;
+    }
+
+    private async void AnalyzeXml()
     {
         var strategy = AnalysisPicker.SelectedItem?.ToString();
         if (string.IsNullOrEmpty(XmlFilePathEntry.Text))
@@ -69,9 +73,12 @@ public partial class MainPage : ContentPage
 
         var name = NameEntry.Text?.Trim();
         var faculty = FacultyEntry.Text?.Trim();
+        var department = DepartmentEntry.Text?.Trim();
         var position = PositionEntry.Text?.Trim();
+        var salaryFrom = SalaryFromEntry.Text?.Trim();
+        var salaryTo = SalaryToEntry.Text?.Trim();
 
-        var results = _analyzer.AnalyzeDocument(XmlFilePathEntry.Text, name, faculty, position);
+        var results = _analyzer.AnalyzeDocument(XmlFilePathEntry.Text, name, faculty, department, position, salaryFrom, salaryTo);
 
         // Перевіряємо результати
         if (results.Any())
@@ -84,9 +91,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-
-
-    private async void OnTransform(object sender, EventArgs e)
+    private async void TransformToHtml()
     {
         if (string.IsNullOrEmpty(XmlFilePathEntry.Text) || string.IsNullOrEmpty(XslFilePathEntry.Text) || string.IsNullOrEmpty(HtmlFilePathEntry.Text))
         {
@@ -112,13 +117,19 @@ public partial class MainPage : ContentPage
         }
     }
 
-
-    private void OnClear(object sender, EventArgs e)
+    private void ClearAll()
     {
         XmlFilePathEntry.Text = "";
         XslFilePathEntry.Text = "";
         HtmlFilePathEntry.Text = "";
+        NameEntry.Text = "";
+        FacultyEntry.Text = "";
+        DepartmentEntry.Text = "";
+        PositionEntry.Text = "";
+        SalaryFromEntry.Text = "";
+        SalaryToEntry.Text = "";
         AnalysisPicker.SelectedItem = null;
         ResultsCollectionView.ItemsSource = null;
     }
+
 }

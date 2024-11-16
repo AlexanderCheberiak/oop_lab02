@@ -1,7 +1,102 @@
-﻿<University>
-  <Person Name="John Doe" Faculty="ФКНК" Position="Professor" Salary="5000" />
-  <Person Name="Jane Smith" Faculty="Mathematics" Position="Associate Professor" Salary="4000" />
-  <Person Name="Alice Brown" Faculty="Computer Science" Position="Assistant" Salary="3000" />
-  <Person Name="Bob White" Faculty="Physics" Position="Researcher" Salary="3500" />
-  <Person Name="Emily Davis" Faculty="Computer Science" Position="Researcher" Salary="3200" />
-</University>
+﻿<university>
+	<faculty name="ФКНК">
+		<department name="ТТП">
+			<employee>
+				<position>Асистент</position>
+				<name>Іванов Іван</name>
+				<salary>10000</salary>
+			</employee>
+			<employee>
+				<position>Асистент</position>
+				<name>Іваненко Сергій</name>
+				<salary>7000</salary>
+			</employee>
+			<employee>
+				<position>Професор</position>
+				<name>Коваленко Юлія</name>
+				<salary>12000</salary>
+			</employee>
+		</department>
+		<department name="ТК">
+			<employee>
+				<position>Професор</position>
+				<name>Бондаренко Анатолій</name>
+				<salary>20000</salary>
+			</employee>
+			<employee>
+				<position>Доцент</position>
+				<name>Семенюк Валентина</name>
+				<salary>16000</salary>
+			</employee>
+		</department>
+		<department name="МІ">
+			<employee>
+				<position>Асистент</position>
+				<name>Іваненко Сергій</name>
+				<salary>7000</salary>
+			</employee>
+			<employee>
+				<position>Доцент</position>
+				<name>Петренко Андрій</name>
+				<salary>11000</salary>
+			</employee>
+		</department>
+	</faculty>
+	<faculty name="ННІФ">
+		<department name="Англійська філологія">
+			<employee>
+				<position>Асистент</position>
+				<name>Шевченко Тарас</name>
+				<salary>9000</salary>
+			</employee>
+			<employee>
+				<position>Професор</position>
+				<name>Шевчук Юрій</name>
+				<salary>15000</salary>
+			</employee>
+			<employee>
+				<position>Доцент</position>
+				<name>Кравченко Олена</name>
+				<salary>13500</salary>
+			</employee>
+		</department>
+		<department name="Літературознавство">
+			<employee>
+				<position>Асистент</position>
+				<name>Соколов Вадим</name>
+				<salary>8500</salary>
+			</employee>
+			<employee>
+				<position>Доцент</position>
+				<name>Демченко Катерина</name>
+				<salary>12000</salary>
+			</employee>
+		</department>
+	</faculty>
+	<faculty name="ФРЕКС">
+		<department name="Фізика">
+			<employee>
+				<position>Доцент</position>
+				<name>Гончар Олексій</name>
+				<salary>14000</salary>
+			</employee>
+			<employee>
+				<position>Асистент</position>
+				<name>Коваль Марія</name>
+				<salary>9500</salary>
+			</employee>
+		</department>
+		<department name="Електроніка">
+			<employee>
+				<position>Професор</position>
+				<name>Луценко Віктор</name>
+				<salary>18000</salary>
+			</employee>
+			<employee>
+				<position>Доцент</position>
+				<name>Павленко Ірина</name>
+				<salary>12500</salary>
+			</employee>
+		</department>
+	</faculty>
+</university>

@@ -17,14 +17,16 @@ namespace Lab02
         }
 
         // Метод для делегування виклику аналізу документів
-        public List<SearchResult> AnalyzeDocument(string filePath, string? name = null, string? faculty = null, string? position = null)
+        public List<SearchResult> AnalyzeDocument(string filePath, string? name = null, string? faculty = null,
+                                                  string? department = null, string? position = null,
+                                                  string? salaryFrom = null, string? salaryTo = null)
         {
             if (_analyzer == null)
             {
                 throw new InvalidOperationException("Аналізатор не встановлено.");
             }
 
-            return _analyzer.AnalyzeDocument(filePath, name, faculty, position);
+            return _analyzer.AnalyzeDocument(filePath, name, faculty, department, position, salaryFrom, salaryTo);
         }
     }
 

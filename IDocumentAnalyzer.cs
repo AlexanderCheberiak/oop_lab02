@@ -8,7 +8,9 @@ namespace Lab02
 {
     public interface IDocumentAnalyzer
     {
-        List<SearchResult> AnalyzeDocument(string filePath, string? name = null, string? faculty = null, string? position = null);
+        List<SearchResult> AnalyzeDocument(string filePath, string? name = null, string? faculty = null,
+                                           string? department = null, string? position = null, string? salaryFrom = null,
+                                           string? salaryTo = null);
     }
 
 }

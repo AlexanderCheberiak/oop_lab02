@@ -9,36 +9,55 @@ namespace Lab02
 {
     public class DomAnalyzer : IDocumentAnalyzer
     {
-        public List<SearchResult> AnalyzeDocument(string filePath, string? name, string? faculty, string? position)
+        public List<SearchResult> AnalyzeDocument(string filePath, string? name, string? faculty, string? department, string? position, string? salaryFrom, string? salaryTo)
         {
             var results = new List<SearchResult>();
 
             var doc = new XmlDocument();
             doc.Load(filePath);
 
-            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
-            {
-                var person = new SearchResult
-                {
-                    Name = node.Attributes["Name"]?.Value,
-                    Faculty = node.Attributes["Faculty"]?.Value,
-                    Position = node.Attributes["Position"]?.Value,
-                    Salary = node.Attributes["Salary"]?.Value
-                };
+            bool isSalaryFromValid = int.TryParse(salaryFrom, out var salaryFromValue);
+            bool isSalaryToValid = int.TryParse(salaryTo, out var salaryToValue);
 
-                if ((string.IsNullOrEmpty(name) || person.Name?.Contains(name, StringComparison.OrdinalIgnoreCase) == true) &&
-                    (string.IsNullOrEmpty(faculty) || person.Faculty?.Contains(faculty, StringComparison.OrdinalIgnoreCase) == true) &&
-                    (string.IsNullOrEmpty(position) || person.Position?.Contains(position, StringComparison.OrdinalIgnoreCase) == true))
+            foreach (XmlNode facultyNode in doc.DocumentElement.SelectNodes("faculty"))
+            {
+                var facultyName = facultyNode.Attributes?["name"]?.Value;
+
+                if (!string.IsNullOrEmpty(faculty) && !string.Equals(facultyName, faculty, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                foreach (XmlNode departmentNode in facultyNode.SelectNodes("department"))
                 {
-                    results.Add(person);
+                    var departmentName = departmentNode.Attributes?["name"]?.Value;
+
+                    if (!string.IsNullOrEmpty(department) && !string.Equals(departmentName, department, StringComparison.OrdinalIgnoreCase))
+                        continue;
+
+                    foreach (XmlNode employeeNode in departmentNode.SelectNodes("employee"))
+                    {
+                        var employee = new SearchResult
+                        {
+                            Name = employeeNode.SelectSingleNode("name")?.InnerText,
+                            Faculty = facultyName,
+                            Department = departmentName,
+                            Position = employeeNode.SelectSingleNode("position")?.InnerText,
+                            Salary = employeeNode.SelectSingleNode("salary")?.InnerText
+                        };
+
+                        if (int.TryParse(employee.Salary, out var salary) &&
+                            (!isSalaryFromValid || salary >= salaryFromValue) &&
+                            (!isSalaryToValid || salary <= salaryToValue) &&
+                            (string.IsNullOrEmpty(name) || employee.Name?.Contains(name, StringComparison.OrdinalIgnoreCase) == true) &&
+                            (string.IsNullOrEmpty(position) || employee.Position?.Contains(position, StringComparison.OrdinalIgnoreCase) == true))
+                        {
+                            results.Add(employee);
+                        }
+                    }
                 }
             }
 
             return results;
         }
     }
-
-
-
 
 }

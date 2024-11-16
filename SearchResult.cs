@@ -10,14 +10,10 @@ namespace Lab02
     {
         public string Name { get; set; }
         public string Faculty { get; set; }
+        public string Department { get; set; }
         public string Position { get; set; }
         public string Salary { get; set; }
 
-        public override string ToString()
-        {
-            // Формат відображення кожного результату у списку
-            return $"{Name} ({Faculty}, {Position}, {Salary} грн)";
-        }
     }
 
 }
